@@ -44,6 +44,8 @@ import android.system.ErrnoException;
 public class JniHelper {
     static {
         System.loadLibrary("jni-helper");
+        
+        
     }
 
     @Deprecated // Use Process.destroy() since API 24
