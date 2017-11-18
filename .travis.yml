@@ -35,8 +35,6 @@ deploy:
   api_key: "ac8af2807cf32ec1a227d85e14bdb1aca769654a"
   file: "shadowsocks-debug.apk"
   skip_cleanup: true
-  on:
-    tags: true
 install:
     - >
       if [ ! -d "$ANDROID_NDK_HOME" ]; then
