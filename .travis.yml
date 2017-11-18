@@ -30,7 +30,13 @@ android:
         - build-tools-27.0.0
         - extra-android-m2repository
         - extra-google-m2repository
-
+deploy:
+  provider: releases
+  api_key: "ac8af2807cf32ec1a227d85e14bdb1aca769654a"
+  file: "shadowsocks-debug.apk"
+  skip_cleanup: true
+  on:
+    tags: true
 install:
     - >
       if [ ! -d "$ANDROID_NDK_HOME" ]; then
